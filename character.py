@@ -50,3 +50,4 @@ def CriarPersonagem(classe1 = 0, raca1 = 0):
         print(f'INT:  {intelecto}')
         print(f'DES:  {destreza}')
         print(f'CAR:  {carisma}')
+        
