@@ -1,14 +1,34 @@
 import character
+import os
 
 nome = ""
-raca = 0
 classe = 0
+raca = 0
 
-print("Qual seu nome?")
-nome = input()
-print("Qual sua Raça?")
-raca = input()
-print("Qual sua classe?")
-classe = input()
+def Main():
+    global nome
+    global raca 
+    global classe
 
-character.CriarPersonagem(classe, raca)
+    os.system('clear')    
+    print("Qual seu nome?")
+    nome = input()
+    os.system('clear')
+
+    print("Qual sua Raça?")
+    print("1. Humano")
+    print("2. Elfo")
+    print("3. Anão")
+    print("4. Gnomo")
+    raca = input()
+    os.system('clear')
+
+    print("Qual sua classe?")
+    print("1. Guerreiro")
+    print("2. Mago")
+    classe = input()
+    os.system('clear')
+
+    character.CriarPersonagem(nome, classe, raca)
+
+Main()
